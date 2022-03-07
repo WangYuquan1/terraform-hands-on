@@ -2,17 +2,22 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "3.5.0"
     }
   }
 }
 
 provider "google" {
-  credentials = file("/Users/wang_yuquan/Downloads/root-slate-341702-37e734dc49cb.json")
+  version = "3.5.0"
 
-  project = "root-slate-341702"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  #credentials = file("/Users/wang_yuquan/Downloads/root-slate-341702-37e734dc49cb.json")
+  credentials = file(var.credentials_file)
+
+  #project = "root-slate-341702"
+  #region  = "us-central1"
+  #zone    = "us-central1-c"
+  project = var.project
+  region  = var.region
+  zone    = var.zone
 }
 
 resource "google_compute_network" "vpc_network" {
