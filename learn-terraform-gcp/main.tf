@@ -8,13 +8,7 @@ terraform {
 
 provider "google" {
   version = "3.5.0"
-
-  #credentials = file("/Users/wang_yuquan/Downloads/root-slate-341702-37e734dc49cb.json")
   credentials = file(var.credentials_file)
-
-  #project = "root-slate-341702"
-  #region  = "us-central1"
-  #zone    = "us-central1-c"
   project = var.project
   region  = var.region
   zone    = var.zone
