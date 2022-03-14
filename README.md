@@ -2,7 +2,9 @@
 
 ### before begin
 1. create a project in the Google Cloud Conslole
-2. [Install Terraform ](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/gcp-get-started&_ga=2.140001525.71889229.1647175739-413664122.1646653751 )
+2. create service account
+3. create GCS bucket # xxx.tfstateファイル保存用
+4. [Install Terraform ](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/gcp-get-started&_ga=2.140001525.71889229.1647175739-413664122.1646653751 )
 
 ### Folder learn-terraform-docker-container
 1. [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/gcp-get-started "Install Terraform")
