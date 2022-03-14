@@ -6,6 +6,10 @@ variable "region" {
   default = "asia-northeast1"
 }
 
+variable "region_zone" {
+  default = "asia-northeast1-c"
+}
+
 variable "vpc_name" {
   default = "terraform-practice-network"
 }
@@ -20,5 +24,9 @@ variable "subnetwork_name" {
 
 variable "subnet_cidr_range" {
   default = "192.168.10.0/24"
+}
+
+variable "bastion_name" {
+  default = "instance-1"
 }
 
