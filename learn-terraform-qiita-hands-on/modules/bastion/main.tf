@@ -33,7 +33,6 @@ resource "google_compute_instance" "bastion" {
   }
 
   service_account {
-    email = var.service_account
     scopes = [
       "https://www.googleapis.com/auth/devstorage.read_only",
       "https://www.googleapis.com/auth/logging.write",
